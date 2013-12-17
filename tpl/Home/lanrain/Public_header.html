@@ -19,7 +19,7 @@ var searchid = 5;
 <div class="topbg">
 <div class="top">
 <div class="toplink">
-<div class="welcome">欢迎使用艾特网络微信平台!</div>
+<div class="welcome">欢迎使用{lanrain::C('site_title')}微信平台!</div>
     <div class="memberinfo"  id="destoon_member">	
 		<if condition="$_SESSION[uid]==false">
 			你好&nbsp;&nbsp;<span class="f_red">游客</span>&nbsp;&nbsp;
@@ -33,7 +33,7 @@ var searchid = 5;
 </div>
     <div class="logo">
         <div style="float:left"></div>
-            <h1><a href="/" title="艾特网络微信平台"><img src="{lanrain::RES}/images/logo-system.png" /></a></h1>
+            <h1><a href="/" title={lanrain::C('site_title')}><img src="{lanrain::RES}/images/logo-system.png" /></a></h1>
             <div class="navr">
         <ul id="topMenu">      
                         <li <eq name="ACTION_NAME" >class="menuon"</eq>></li>     

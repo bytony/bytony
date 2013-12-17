@@ -20,28 +20,16 @@ class SiteAction extends BackAction{
 		$this->display();
 	}
 	public function insert(){
-		$file=$this->_post('files');
-		unset($_POST['files']);
-		unset($_POST[C('TOKEN_NAME')]);
-		
-		if($this->update_config($_POST,CONF_PATH.$file)){
-			$this->success('操作成功',U('Site/index',array('pid'=>6,'level'=>3)));
-		}else{
+
+			$data=D('agent');
+			$where = array('site_url'=>$this->_post('site_url'));
+			$check = $data->where($where)->find();
+			if($check==false) $this->error('非法操作');
+		 	if($data->where($where)->save($_POST)){
+		 	$this->success('操作成功',U('Site/index',array('pid'=>6,'level'=>3)));
+			 }else{
 			$this->success('操作失败',U('Site/index',array('pid'=>6,'level'=>3)));
 		}
 	}
-	
-	private function update_config($config, $config_file = '') {
-		!is_file($config_file) && $config_file = CONF_PATH . 'web.php';
-		if (is_writable($config_file)) {
-			//$config = require $config_file;
-			//$config = array_merge($config, $new_config);
-			//dump($config);EXIT;
-			file_put_contents($config_file, "<?php \nreturn " . stripslashes(var_export($config, true)) . ";", LOCK_EX);
-			@unlink(RUNTIME_FILE);
-			return true;
-		} else {
-			return false;
-		}
-	}
+
 }

@@ -5,6 +5,6 @@ return array(
 	'DB_PORT'=>'3306',
 	'DB_NAME'=>'wx',
 	'DB_USER'=>'root',
-	'DB_PWD'=>'sa',
+	'DB_PWD'=>'',
 	'DB_PREFIX'=>'lanrain_',
 );

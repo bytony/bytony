@@ -1,0 +1,31 @@
+﻿html { min-height:100%; }
+* { margin:0; padding:0; }
+header, footer, section, article, nav, figure, aside, canvas { display:block; }
+.wk_wrap {width:320px;margin:0 auto;padding-bottom:65px;}
+ul, li { list-style:none; }
+img { vertical-align:top; border:0 none; }
+a { text-decoration:none; }
+body { line-height:1.4; font-size:14px; -webkit-text-size-adjust:none; min-width:320px; max-width:1024px; min-height:100%; margin:0 auto; }
+h1 { width:100%; padding-left:8px; }
+.hm-con { margin:0 12px; }
+/*---  ---*/
+.wrapper {width:300px;height:382px;margin:0 auto;overflow:hidden;}
+#scroller {float:left;width:300px;padding:0;overflow:hidden;}
+#scroller ul {float:left;width:100%;text-align:left; }
+#scroller li {float:left;height:382px; text-align:center; font-family:georgia; font-size:12px; line-height:140%; position:relative;overflow:hidden;}
+#scroller li img {max-width:300px;}
+#scroller li p {text-align:left;}
+#nav { width:300px; overflow:hidden; }
+#prev, #next { float:left; font-weight:bold; font-size:14px; padding:5px 0; width:80px; }
+#next { float:right; text-align:right; }
+#indicator > li {float:left;}
+#indicator {width:110px;margin:0 auto;padding:12px 0 0 0; }
+#indicator > li { text-indent:-9999em; width:8px; height:8px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; border-radius:4px; background:#81b916; overflow:hidden; margin-right:4px; }
+#indicator > li.active {background:#035c26;}
+#indicator > li:last-child { margin:0; }
+/*---  ---*/
+
+/*--- -----*/
+.nav {position:fixed;left:0;bottom:0;z-index:999;}
+.nav img, h1 img, .hm-con img { max-width:100%; }
+.nav span { display:inline-block; width:25%; }

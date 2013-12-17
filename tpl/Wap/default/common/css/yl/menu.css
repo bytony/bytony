@@ -1,0 +1,99 @@
+#list3 .todayList{
+	display: block;
+	margin: 0;
+	padding: 2px;
+
+}
+#list3 .todayList li{
+	width: 25%;
+	float: left;
+	overflow: hidden;
+	border-radius: 0px;
+}
+
+#list3 .todayList li .menubtn{
+		text-decoration: none;
+	color: #000;
+	overflow: hidden;
+	border-radius: 5px;
+	margin: 2px;
+	background-color: rgba(255, 255, 255, 0.31);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+	height: 80px;
+}
+
+#list3 .todayList li a {
+	padding: 0px;
+	font-size: 14px;
+	color: #121212;
+	text-decoration: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#list3 .todayList li .menubtn img{
+	overflow: hidden;
+	position: absolute;
+}
+#list3 .todayList li div img{
+	border: 0;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	border-radius: 0px;
+}
+#list3 .todayList li .menubtn .menuname{
+	position: absolute;
+	bottom: 10%;
+}
+#list3 .todayList li:nth-child(1){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(1) .menubtn,#list3 .todayList li:nth-child(1) div img{
+	height: 250px;
+}
+#list3 .todayList li:nth-child(5){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(5) .menubtn,#list3 .todayList li:nth-child(5) div img{
+	height: 250px;
+}
+#list3 .todayList li:nth-child(9){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(9) .menubtn,#list3 .todayList li:nth-child(9) div img{
+	height: 250px;
+}
+#list3 .todayList li:nth-child(13){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(13) .menubtn,#list3 .todayList li:nth-child(13) div img{
+	height: 250px;
+}
+#list3 .todayList li:nth-child(17){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(17) .menubtn,#list3 .todayList li:nth-child(17) div img{
+	height: 250px;
+}
+#list3 .todayList li:nth-child(21){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(21) .menubtn,#list3 .todayList li:nth-child(21) div img{
+	height: 250px;
+}
+#list3 .todayList li:nth-child(25){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(25) .menubtn,#list3 .todayList li:nth-child(25) div img{
+	height: 250px;
+}
+#list3 .todayList li:nth-child(29){
+	width: 74.9%;
+}
+#list3 .todayList li:nth-child(29) .menubtn,#list3 .todayList li:nth-child(29) div img{
+	height: 250px;
+}

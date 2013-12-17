@@ -1,0 +1,202 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>{lanrain:$tpl['wxname']}</title>
+
+<meta name="viewport"
+	content="width=device-width,height=device-
+
+height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" 
+
+content="black">
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+<link href="{lanrain::RES}/css/flash/css/news3.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{lanrain::RES}/css/flash/css/plugmenu.css">
+<script src="{lanrain::RES}/js/card/copyright.js" type="text/javascript"></script>
+<style>
+#cate6 .mainmenu li.li0:nth-child(5) .menumesg {
+	background-color: #990000;
+}
+
+#cate6 .mainmenu li.li0:nth-child(1) .menumesg {
+	background-color: #01AA0A;
+}
+
+#cate6 .mainmenu li.li0:nth-child(9) .menumesg {
+	background-color: #8B4500;
+}
+
+#cate8 .mainmenu li .menubtn {
+	border-radius: 5px;
+}
+
+#cate8 .mainmenu li div img {
+	border-radius: 5px;
+}
+
+.themeStyle {
+	background: #DE0C04
+}
+
+.bottomcss{
+position: fixed;
+bottom: 0%;
+z-index: 9999;
+}
+.item {
+text-decoration:none;
+color: white;
+}
+.context{
+font-size:13px;
+width:25%;
+border-radius: 5%; 
+font-weight:bold;
+/* margin-left: -2%;
+margin-right:1.8%; */
+float:left;
+text-align: center;
+}
+.item-image {
+margin-top:10%;
+margin-bottom:5%;
+width:33%;
+}  
+.C0{
+background:#26c1ff;
+}
+.C1{
+background:#ffc483;
+}
+.C2{
+background:#ffd0e6;
+}
+.C3{
+background:#bdff83;
+}
+
+
+
+
+</style>
+<script src="{lanrain::RES}/css/flash/js/iscroll1.js"
+	type="text/javascript"></script>
+	<script src="{lanrain::RES}/css/flash/js/hiscroll.js"
+	type="text/javascript"></script>
+<!--  -->
+	
+	
+
+</head>
+
+<body id="cate9">
+<section class="wk_wrap">
+	<header class="header">
+		<a href="http://wx.wozongla.net/index.php?g=Wap&m=Index&a=index&token=xuchengnan&wecha_id=o7GVZt-P0xbZ1wadlTkg-KDKiy3s">
+			<h1><img src="http://t2.qpic.cn/mblogpic/c1e39995124c29d634ac/2000"/></h1>
+		</a>
+	</header>
+	<section class="hm-con">
+		<div class="wrapper">
+			<div id="scroller">
+				<ul id="thelist">
+				<volist name="res" id="so">
+					<li>
+						<h2>{lanrain:$so.title}</h2>
+						<p class="onlyheight">{lanrain:$so.text}</p>
+						<img src="{lanrain:$so.pic}">
+					</li>
+				</volist>
+				</ul>
+			</div>
+		</div>
+		<div id="nav">
+			<ul id="indicator">
+				<volist name="res" id="so">
+					<li><if condition="$i eq 1">class="active"</if> >{lanrain:$i}</li>
+				</volist>
+			</ul>
+		</div>
+	</section>
+	<input type="hidden" value="{lanrain:$token|htmlspecialchars_decode}" id="token">
+	<input type="hidden" value="{lanrain:$wecha_id|htmlspecialchars_decode}" id="wecha_id">
+	
+		</section>
+	<div class="bottomcss">
+		<a class ="item" href="http://wx.wozongla.net/index.php?g=Wap&m=Index&a=lists&classid=360&token=xuchengnan">
+			<div class="item context C0">
+				<img class="item-image" src="http://t2.qpic.cn/mblogpic/d299c8054797fb82d63a/2000" >
+				<div>户型展示</div>
+			</div>
+		</a>
+		<a class ="item " href="tel:18667112932">
+			<div class="item context C1">
+				<img class="item-image" src="http://t2.qpic.cn/mblogpic/dab6db5d8d540c5bff90/2000" >
+				<div>售楼热线</div>
+			</div>
+		</a>
+		<a class ="item" href="http://map.baidu.com/mobile/webapp/search/search/qt=s&wd=%E5%AF%8C%E9%98%B3%E5%B8%82%E5%A4%A7%E6%B6%A6%E5%8F%91/newmap=1&ie=utf-8#place/detail/qt=s&wd=%E5%AF%8C%E9%98%B3%E5%B8%82%E5%A4%A7%E6%B6%A6%E5%8F%91&c=179/i=2&showall=1&vt=map">
+			<div class="item context C2">
+				<img class="item-image" src="http://t2.qpic.cn/mblogpic/554a0825753e7e7f4722/2000" >
+				<div>地图导航</div>
+			</div>
+		</a>
+		<a class ="item" href="http://wx.wozongla.net/index.php?g=Wap&m=Selfform&a=index&token=xuchengnan&id=7">
+			<div class="item context C3">
+				<img class="item-image" src="http://t2.qpic.cn/mblogpic/b96fc19edd7041e98812/2000">
+				<div>预约看房</div>
+			</div>
+		</a>
+	</div>
+
+	
+
+
+<script type="text/javascript">
+	var active=0,
+	as=document.getElementById
+
+('indicator').getElementsByTagName('li');
+for(var i=0;i<as.length;i++){
+	(function(){
+		var j=i;
+		as[i].onclick=function(){
+			t2.slide(j);
+			return false;
+		}
+	})();
+}
+var t1=new TouchScroll
+
+({id:'wrapper','width':5,'opacity':0.7,color:'#555',minLength:
+
+20});
+var t2=new TouchSlider({id:'thelist', speed:600, timeout:6000, 
+
+before:function(index){
+		as[active].className='';
+		active=index;
+		as[active].className='active';
+	}});
+</script>
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	 var hm = document.createElement("script");
+	 hm.src = "//hm.baidu.com/hm.js?
+
+ff6b8b04a1be6b2fcdc9ec577ae01e9f";
+	 var s = document.getElementsByTagName("script")[0]; 
+	 s.parentNode.insertBefore(hm, s);
+	 })();
+</script>
+ <div class="copyright"  ><a href="http://wx.wozongla.net/index.php?g=Wap&m=Index&a=index&token=aitewangluo"><php>echo htmlspecialchars_decode(C('copyright'))</php></a></div> 
+ <!-- <div style="display:none"> {lanrain:$tpl.tongji|htmlspecialchars_decode}</div> -->
+	
+	
+</body>
+</html>

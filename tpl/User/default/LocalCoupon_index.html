@@ -1,0 +1,75 @@
+﻿<include file="Public:head" />
+<div class="content">
+
+	<div class="cLineB">
+		<h4>
+			本地优惠券管理 <span class="FAQ">开通本地优惠券，在图文内容详情页面显示优惠券信息</span>
+		</h4>
+
+	</div>
+	<div class="cLineC" style="line-height: 32px;">
+		<a target="ddd" href="{lanrain::U('LocalCoupon/add')}"
+			class="btnGrayS vm bigbtn">添加本地优惠券</a>
+		
+	</div>
+
+	<div class="msgWrap form">
+
+		<div class="bdrcontent">
+			<div id="div_ptype">
+				<table class="ListProduct" border="0" cellSpacing="0"
+					cellPadding="0" width="100%">
+					<thead>
+						<tr>
+							<th style="width: 120px;">关键词</th>
+							<th style="width: 120px;">优惠券商家</th>
+							<th style="width: 70px;">优惠券数量</th>
+							<th>本地优惠券图片外链地址(宽720高400) <a target="999" class="tooltips"><img
+									src="{lanrain::RES}/images/price_help.png" align="absmiddle" /><span>
+										<p>分类图片最佳尺寸：宽720高400</p>
+										<p>不支持上传图片，请把图片上传到腾讯微博，再这里填写图片的外链地址。</p>
+										<p>如果不填写分类图片地址系统将分配默认图片。</p>
+								</span></a></th>
+							<th style="width: 120px;">地址</th>
+							<th style="width: 80px;">联系方式</th>
+							<th style="width: 120px;">开始时间/结束时间</th>
+							<th style="width: 100px;" class="norightborder">操作</th>
+						</tr>
+					</thead>
+					<volist name="list" id="list">
+					<tr>
+						<td>{lanrain:$list.keyword}</td>
+						<td>{lanrain:$list.name}</td>
+						<td>{lanrain:$list.couponnum}</td>
+						<td><div class="cateimg">
+								<img src="{lanrain:$list.imgurl}" class="cateimg_small" /><img
+									src="{lanrain:$list.imgurl}" class="cateimg_big" />
+							</div></td>
+						<td>{lanrain:$list.address}</td>
+						<td>{lanrain:$list.tel}</td>
+						<td>{lanrain:$list.starttime|date='Y-m-d',###}<br />{lanrain:$list.endtime|date='Y-m-d',###}</td>
+
+						<td class="norightborder">
+							<a target="ddd"
+							href="{lanrain::U('LocalCoupon/edit',array('id'=>$list['id']))}">编辑</a>
+							<a href="{lanrain::U('LocalCoupon/del',array('id'=>$list['id']))}">删除</a>
+						</td>
+					</tr>
+					</volist>
+
+				</table>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+<div class="clr"></div>
+</div>
+</div>
+</div>
+<!--底部-->
+</div>
+
+<include file="Public:footer" />

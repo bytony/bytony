@@ -1,0 +1,64 @@
+body{
+	background:#eeeeee;
+	
+}
+
+
+
+.menuson{
+	font-size:18px;
+	float:left; 
+	position: relative;
+	text-align: center;
+	margin:1px;
+}
+
+.M1 .menucontext,.M7 .menucontext,.M11 .menucontext,.M17 .menucontext{
+	width:60px;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.menucontext-image{
+	position: absolute;
+	bottom: 8px;
+	right: 8px; 
+}
+
+.M1,.M7,.M11,.M17 {
+	width: 32.6%; /*每个分类所占比例：一排2个就是50%*/
+	height: 120px;
+	color:white;
+}
+.M1{
+	background: #28329d;
+}
+.M7,.M17{
+	background: #ff7900;
+}
+.M11{
+	background: #eabaf3;
+}
+.M1 .menuimage,.M7 .menuimage,.M11 .menuimage,.M4 .menuimage,.M3 .menuimage,.M5 .menuimage,.M8 .menuimage,.M9 .menuimage,.M10 .menuimage,.M14 .menuimage,.M13 .menuimage,.M15 .menuimage,.M17 .menuimage{
+	display: none;
+}
+
+.M2,.M6,.M12,.M16{
+	width: 66%;
+	height: 120px;
+}
+
+.M2 .menucontext,.M6 .menucontext,.M12 .menucontext,.M16 .menucontext{
+	display: none;
+}
+
+.M3,.M4,.M5,.M8,.M9,.M10,.M13,.M14,.M15 {
+	width:32.6%;
+	height:40px;
+	padding-top:13px;
+	background: white;
+}
+.M3 .menucontext-image,.M4 .menucontext-image,.M5 .menucontext-image,.M8 .menucontext-image,.M9 .menucontext-image,.M10 .menucontext-image,.M2 .menucontext-image,.M6 .menucontext-image,.M12 .menucontext-image,.M13 .menucontext-image,.M14 .menucontext-image,.M15 .menucontext-image{
+	display:none;
+}

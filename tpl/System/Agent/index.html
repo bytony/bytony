@@ -17,63 +17,31 @@
 <include file="Site:public" />
 <div id="artlist">
 <table width="100%" border="0" cellspacing="0" cellpadding="0" id="addn">
- <form id="myform" action="{lanrain::U('Site/insert')}" method="post">
+ <form id="myform" action="{lanrain::U('Agent/insert')}" method="post">
 
     <tr> 
-      <td  height="48" align="right"><strong>网站名称：</strong></td>
-      <td><input type="text" name="site_name" value="{lanrain::C('site_name')}" class="ipt" size="45" /><span>&nbsp;&nbsp;例：百合网</span>
+      <td  height="48" align="right"><strong>代理名称：</strong></td>
+      <td><input type="text" name="agentname" value="" class="ipt" size="45" /><span>&nbsp;&nbsp;例：百合网</span>
 	  </td>
     </tr>
 	 <tr> 
-      <td  height="48" align="right"><strong>网站标题：</strong></td>
-      <td><input type="text" name="site_title" value="{lanrain::C('site_title')}" class="ipt" size="45" /><span>&nbsp;&nbsp;一般不超过80个字符</span>
+      <td  height="48" align="right"><strong>代理url：</strong></td>
+      <td><input type="text" name="agenturl" value="" class="ipt" size="45" /><span>&nbsp;&nbsp;例：www.aitewl.com</span>
 	  
     </tr>
 	 <tr> 
-      <td  height="48" align="right"><strong>网站地址：</strong></td>
-      <td><input type="text" name="site_url" value="{lanrain::C('site_url')}" class="ipt" size="45" /><span>&nbsp;&nbsp;例:http://lanrain.cn</span>
+      <td  height="48" align="right"><strong>代理账号：</strong></td>
+      <td><input type="text" name="agentuser" value="" class="ipt" size="45" /><span>&nbsp;&nbsp;  </span>
     </tr>  
 	<tr> 
-      <td  height="48" align="right"><strong>机器人名称：</strong></td>
-      <td><input type="text" name="site_my" value="{lanrain::C('site_my')}" class="ipt" size="45" /><span>&nbsp;&nbsp;例:http://lanrain.cn</span>
+      <td  height="48" align="right"><strong>代理密码：</strong></td>
+      <td><input type="text" name="agentpwd" value="" class="ipt" size="45" /><span>&nbsp;&nbsp;  </span>
+    </tr>
+  <tr> 
+      <td  height="48" align="right"><strong>预存公号：</strong></td>
+      <td><input type="text" name="prestore" value="" class="ipt" size="45" /><span>&nbsp;&nbsp;剩余可用公号</span>
     </tr> 
-	<tr> 
-      <td  height="48" align="right"><strong>审核用户：</strong></td>
-      <td><input type="radio" name="ischeckuser" value="true" <php>if(C('ischeckuser')==='true')echo checked;</php> />注册时无需要审核<input type="radio" name="ischeckuser" value="false" <php>if(C('ischeckuser')==='false')echo checked;</php> />注册时需要审核</td>
-    </tr>
-	<tr> 
-      <td  height="48" align="right"><strong>网站备案：</strong></td>
-      <td><input type="text" name="ipc" value="{lanrain::C('ipc')}" class="ipt" size="45" /><span>&nbsp;&nbsp;例：沪IPC备12587号</span>
-    </tr>
-	<tr> 
-      <td  height="48" align="right"><strong>站长QQ：</strong></td>
-      <td><input type="text" name="site_qq" value="{lanrain::C('site_qq')}" class="ipt" size="45" /><span>&nbsp;&nbsp;例如:QQ:8888888</span>
-    </tr>
-    <tr> 
-      <td  height="48" align="right"><strong>百度地图API：</strong></td>
-      <td><input type="text" name="baidu_map_api" value="{lanrain::C('baidu_map_api')}" class="ipt" size="45" /><span>&nbsp;&nbsp;<a href="http://lbsyun.baidu.com/apiconsole/key?application=key" target="_blank">点击获取</a></span>
-    </tr>
-	<tr> 
-      <td  height="48" align="right"><strong>站长Email：</strong></td>
-      <td><input type="text" name="site_email" value="{lanrain::C('site_email')}" class="ipt" size="45" /><span>&nbsp;&nbsp;例如:QQ:server@lanrain.cn</span>
-    </tr>
-	<tr> 
-      <td  height="48" align="right"><strong>网站关键词：</strong></td>
-      <td><textarea	 type="text" name="keyword" class="ipt" style="width:450px;height:60px;margin:5px 0 5px 0;" />{lanrain::C('keyword')}</textarea><span>&nbsp;&nbsp;一般不超过100个字符</span>
-    </tr>	
-	<tr> 
-      <td  height="48" align="right"><strong>网站　描述：</strong></td>
-      <td><textarea	 type="text" name="content" class="ipt" style="width:450px;height:60px;margin:5px 0 5px 0;" />{lanrain::C('content')}</textarea><span>&nbsp;&nbsp;一般不超过200个字符</span>
-    </tr>
-	<tr> 
-      <td  height="48" align="right"><strong>统计　代码：</strong></td>
-      <td><textarea	 type="text" name="counts" class="ipt" style="width:450px;height:60px;margin:5px 0 5px 0;" />{lanrain::C('counts')}</textarea><span>&nbsp;&nbsp;例:51啦统计,cnzz统计</span>
-    </tr>
-	<tr> 
-      <td  height="48" align="right"><strong>底部　版权：</strong></td>
-      <td><textarea	 type="text" name="copyright" class="ipt" style="width:450px;height:60px;margin:5px 0 5px 0;" />{lanrain::C('copyright')}</textarea><span>&nbsp;&nbsp;例:lanrain版权所有</span>
-    </tr>
-   <input type="hidden" name="files" value="info.php" />
+       <input type="hidden" name="files" value="info.php" />
     <tr> 
       <td height="48" colspan="2">
 		  <div id="addkey"></div>

@@ -21,14 +21,13 @@ class AgentAction extends BackAction{
 	}
 	public function insert(){
 
-			$data=D('agent');
-			$where = array('site_url'=>$this->_post('site_url'));
-			$check = $data->where($where)->find();
-			if($check==false) $this->error('非法操作');
-		 	if($data->where($where)->save($_POST)){
-		 	$this->success('操作成功',U('Site/index',array('pid'=>6,'level'=>3)));
+			$data=D('agent_info');
+			$data2=D('agent');
+			$agentinfo['site_url']=$_POST['agenturl'];
+		 	if($data->add($_POST)&&($data2->add($agentinfo))){
+		 	$this->success('操作成功',U('Agent/index',array('pid'=>6,'level'=>3)));
 			 }else{
-			$this->success('操作失败',U('Site/index',array('pid'=>6,'level'=>3)));
+			$this->success('操作失败',U('Agent/index',array('pid'=>6,'level'=>3)));
 		}
 	}
 

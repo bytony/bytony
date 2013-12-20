@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<title>艾特网络微信平台,企业微信营销首选</title>
+<title><?php echo C('site_title');?>微信平台,企业微信营销首选</title>
 <meta name="keywords" content="企业微信营销,微信营销案例,微信营销技巧,微信公共平台"/>
 <meta name="description" content="平台是企业微信管理和营销工具,通过平台,用户可以轻松管理自己的微信各类信息,对微信公众账号进行维护、开展智能机器人、微信会员卡在线发优惠劵等活动,对微信营销实现有效监控,极大扩展潜在客户群和实现企业的运营目标!服务热线：18623556069"/>
 ﻿<link rel="stylesheet" type="text/css" href="<?php echo RES;?>/css/style.css"/>
@@ -26,7 +26,7 @@ var searchid = 5;
 <div class="topbg">
 <div class="top">
 <div class="toplink">
-<div class="welcome">欢迎使用艾特网络微信平台!</div>
+<div class="welcome">欢迎使用<?php echo C('site_title');?>微信平台!</div>
     <div class="memberinfo"  id="destoon_member">	
 		<?php if($_SESSION[uid]==false): ?>你好&nbsp;&nbsp;<span class="f_red">游客</span>&nbsp;&nbsp;
 			<a href="<?php echo U('Index/login');?>">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -38,7 +38,7 @@ var searchid = 5;
 </div>
     <div class="logo">
         <div style="float:left"></div>
-            <h1><a href="/" title="艾特网络微信平台"><img src="<?php echo RES;?>/images/logo-system.png" /></a></h1>
+            <h1><a href="/" title=<?php echo C('site_title');?>><img src="<?php echo RES;?>/images/logo-system.png" /></a></h1>
             <div class="navr">
         <ul id="topMenu">      
                         <li <?php if((ACTION_NAME) == ""): ?>class="menuon"<?php endif; ?>></li>     
@@ -189,7 +189,7 @@ var searchid = 5;
 <div class="IndexFoot" style="height:120px;">
 <div class="foot">
 <div class="foot_page">
-<a href="<?php echo C('site_url');?>">艾特网络微信平台,企业微信营销首选！</a><br/>
+<a href="<?php echo C('site_url');?>"><?php echo C('site_title');?>,企业微信营销首选！</a><br/>
 帮助您快速搭建属于自己的移动3G营销平台,构建自己的对话式客户群体。
 </div>
     </div>

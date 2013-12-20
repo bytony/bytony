@@ -204,10 +204,16 @@ editor = K.create('#info', {
 resizeType : 1,
 allowPreviewEmoticons : false,
 allowImageUpload : false,
-items : [
-'source','undo','clearhtml','hr',
-'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-'insertunorderedlist', '|', 'emoticons', 'image','link', 'unlink','baidumap','lineheight','table','anchor','preview','print','template','code','cut']
+ items :[
+        'source', '|', 'undo', 'redo', '|', 'preview', 'print', 'template', 'code', 'cut', 'copy', 'paste',
+        'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+        'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+        'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+        'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+        'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
+        'flash', 'media', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
+        'anchor', 'link', 'unlink', '|', 'about'
+    ],
 });
 
 
@@ -259,7 +265,7 @@ items : [
                 </TR>
                     <TR>
                   <TH valign="top"><label for="info">图文详细页内容：</label></TH>
-                  <TD><textarea name="info" id="info"  rows="5" style="width:590px;height:360px"> <?php echo ($list["info"]); ?>  </textarea></TD>
+                  <TD><textarea  name="info" id="info"  rows="5" style="width:590px;height:360px"> <?php echo ($list["info"]); ?>  </textarea></TD>
                 </TR>
                 <TR>
                   <TH></TH>
